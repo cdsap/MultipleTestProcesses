@@ -13,7 +13,7 @@ concurrency:
 
 jobs:
     test_and_apk:
-        name: "Local 45-s tesxstss and APKs"
+        name: "Local 45ss-s tesxstss and APKs"
         runs-on: ubuntu-latest
 
         permissions:
