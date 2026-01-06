@@ -1,0 +1,7 @@
+package com.awesomeapp.sync
+
+data class Model15_226(
+    val id: String = "Model15_226-1767733585434",
+    val name: String = "Model for Model15_226",
+    val description: String = "Description for Model15_226"
+)

@@ -1,0 +1,45 @@
+name: Build
+
+on:
+    workflow_dispatch:
+    push:
+        branches:
+            - large_tests
+    pull_request:
+
+concurrency:
+    group: build-${{ github.ref }}
+    cancel-in-progress: true
+
+jobs:
+    test_and_apk:
+        name: "Local 45- tests and APKs"
+        runs-on: ubuntu-latest
+
+        permissions:
+            contents: write
+            pull-requests: write
+            security-events: write
+
+        timeout-minutes: 59
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - name: Set up JDK 21
+              uses: actions/setup-java@v4
+              with:
+                  distribution: 'zulu'
+                  java-version: 23
+
+            - name: Process Watcher
+              uses: cdsap/build-process-watcher@main
+              with:
+                  remote_monitoring: true
+
+
+            - name: Check build-logic
+              run: ./gradlew test
+              env:
+                  DEVELOCITY_ACCESS_KEY: ${{ secrets.DV_ACCESS_KEY }}

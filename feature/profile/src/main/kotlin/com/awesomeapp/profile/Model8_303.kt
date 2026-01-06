@@ -1,0 +1,7 @@
+package com.awesomeapp.profile
+
+data class Model8_303(
+    val id: String = "Model8_303-1767733583749",
+    val name: String = "Model for Model8_303",
+    val description: String = "Description for Model8_303"
+)

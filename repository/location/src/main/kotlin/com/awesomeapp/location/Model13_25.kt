@@ -1,0 +1,7 @@
+package com.awesomeapp.location
+
+data class Model13_25(
+    val id: String = "Model13_25-1767733585021",
+    val name: String = "Model for Model13_25",
+    val description: String = "Description for Model13_25"
+)

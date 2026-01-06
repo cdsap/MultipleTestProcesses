@@ -1,0 +1,7 @@
+package com.awesomeapp.search
+
+data class Model12_391(
+    val id: String = "Model12_391-1767733584557",
+    val name: String = "Model for Model12_391",
+    val description: String = "Description for Model12_391"
+)
