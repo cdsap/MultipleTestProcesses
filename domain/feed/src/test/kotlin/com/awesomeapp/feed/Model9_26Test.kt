@@ -21,5 +21,6 @@ class Model9_26Test {
     fun `test model creation`() {
         val model = Model9_26()
         assertNotNull(model)
+            Thread.sleep(1000)
     }
 }

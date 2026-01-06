@@ -28,6 +28,7 @@ class State9_52Test {
         repeat(10_000) { iteration ->
             harmlessLookingMethod()
         }
+
     }
 
 
