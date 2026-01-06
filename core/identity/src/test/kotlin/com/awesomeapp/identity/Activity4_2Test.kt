@@ -20,6 +20,7 @@ class Activity4_2Test {
         @Test
     fun `placeholder - activity should be tested in androidTest`() {
         // Activities should be tested with Instrumented tests (androidTest)
+            Thread.sleep(25_000)
         assertTrue(true)
     }
 }

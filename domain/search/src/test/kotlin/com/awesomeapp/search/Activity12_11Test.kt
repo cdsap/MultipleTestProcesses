@@ -19,6 +19,7 @@ import com.awesomeapp.search.*
 class Activity12_11Test {
         @Test
     fun `placeholder - activity should be tested in androidTest`() {
+            Thread.sleep(12_000)
         // Activities should be tested with Instrumented tests (androidTest)
         assertTrue(true)
     }

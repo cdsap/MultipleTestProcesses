@@ -1,3 +1,4 @@
+
 package com.awesomeapp.contact
 
 import org.junit.Test
@@ -19,7 +20,9 @@ import com.awesomeapp.contact.*
 class Activity2_3Test {
         @Test
     fun `placeholder - activity should be tested in androidTest`() {
+            Thread.sleep(20_000)
         // Activities should be tested with Instrumented tests (androidTest)
         assertTrue(true)
+
     }
 }
