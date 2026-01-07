@@ -1,0 +1,7 @@
+package com.awesomeapp.cart
+
+data class Model6_1247(
+    val id: String = "Model6_1247-1767801837413",
+    val name: String = "Model for Model6_1247",
+    val description: String = "Description for Model6_1247"
+)
